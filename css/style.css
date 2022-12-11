@@ -1,0 +1,479 @@
+@font-face {
+    font-family: 'koodak';
+    src: url('../fonts/KoodakBold.eot?#')format('eot'), url('../fonts/KoodakBold.ttf')format('truetype'), url('../fonts/KoodakBold.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nazanin';
+    src: url('../fonts/Nazanin.eot?#')format('eot'), url('../fonts/Nazanin.ttf')format('truetype'), url('../fonts/Nazanin.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/Yekan.eot?#')format('eot'), url('../fonts/Yekan.ttf')format('truetype'), url('../fonts/Yekan.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+ :focus {
+    outline: 0 !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Navbar  */
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #1ebba3 !important;
+}
+
+.nav-link {
+    font-family: 'koodak' !important;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+.navbar-brand {
+    font-family: 'yekan' !important;
+}
+
+
+/* End Navbar  */
+
+
+/* Home */
+
+.landing {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.home-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/35.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    background-position: center center;
+}
+
+.caption {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    color: rgb(8, 8, 8);
+}
+
+.caption h1 {
+    display: inline-block;
+    font-family: 'yekan';
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-shadow: 1.5rem 1.5rem .8rem #000;
+    margin: auto;
+    /* max-width: 800px; */
+    border: 10px solid black;
+    /* color: #fff; */
+}
+
+
+/* End Home */
+
+
+/* About */
+
+.area {
+    margin: 0 auto;
+    padding: 2.2rem 2rem 0;
+}
+
+.area h2 {
+    font-size: 2.4rem;
+    font-family: 'yekan';
+}
+
+.area p {
+    font-family: 'nazanin';
+    width: 450px;
+    text-align: justify;
+}
+
+.area img {
+    margin: -1rem 0 1rem !important;
+    width: 300ox;
+}
+
+.button-about {
+    display: block;
+}
+
+.btn-secondary {
+    border-width: 0.1rem;
+    border-radius: 7px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: .8rem;
+    background-color: #1ebba3;
+    border-color: #1ebba3;
+}
+
+.btn-secondary:hover {
+    background-color: #128b79;
+    border-color: #169c88;
+}
+
+
+/* End About*/
+
+
+/* Product Group */
+
+#product-group {
+    z-index: 100;
+}
+
+.group-backgroun {
+    position: relative;
+}
+
+.title-product {
+    color: #000;
+}
+
+.product-hr {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #1ebba3;
+    margin: 1rem auto 2rem;
+}
+
+.product {
+    border: 2px solid #cecece;
+    background-color: #cecece;
+    margin: 1rem auto;
+    box-shadow: 2px 2px 5px #1ebba3;
+}
+
+.img-product {
+    width: 300px;
+    border: 2px solid #cecece;
+    box-shadow: .5rem .7rem .98rem rgb(95, 94, 94);
+    margin: 2rem auto;
+}
+
+.img-product:hover {
+    border: 4px solid #b4b3b3;
+    box-shadow: 1rem 1rem .7rem rgb(63, 62, 62);
+    width: 350px;
+    opacity: .5;
+}
+
+.product h3 {
+    color: rgb(26, 26, 26);
+    padding: 1.5rem 0 1rem;
+    font-style: 1.5rem 'nazanin';
+    font-weight: bold;
+}
+
+.product h3:hover {
+    color: #1ebba3;
+    font-weight: bold;
+    text-shadow: 0 .4rem .5rem;
+}
+
+.product p {
+    color: rgb(109, 108, 108);
+    font-size: 'nazanin';
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: .1rem 1rem;
+}
+
+.product a i {
+    color: rgb(192, 71, 71);
+    padding: .8rem 0 2.5rem;
+    font-size: 3rem;
+}
+
+.product a i:hover {
+    color: #1ebba3;
+    font-size: 3.5rem;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1 !important;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url(../img/38.jpg);
+    background-size: cover;
+    background-position: center center;
+    opacity: .4;
+}
+
+.group-backgroun .dark {
+    background-color: rgba(112, 111, 111, 0.2);
+    color: #fff;
+    padding: 7rem 2rem;
+}
+
+
+/* .col-sm-12 {
+        padding-top: 15px;
+    } */
+
+
+/* End Product Group */
+
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color: #343a40;
+    color: #fff;
+    font-family: 'yekan';
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.footer .footer-title {
+    font-size: 1.5rem;
+}
+
+.footer .footer p {
+    font-family: 'nazanin';
+}
+
+.footer .footer-icon a i {
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    margin: 1rem auto;
+}
+
+.footer .footer-icon a i:hover {
+    color: #1ebba3 !important;
+}
+
+.footer .contact-map iframe {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 2rem;
+}
+
+
+/* Fab Btn */
+
+.btn-group-fab {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: auto;
+}
+
+.btn-group-fab .btn {
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-group-fab .btn-main {
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    line-height: 2;
+}
+
+.btn-group-fab .btn-sub {
+    right: 50%;
+    bottom: 0;
+    z-index: 1;
+    margin-right: -20px;
+    transition: all 0.6s;
+}
+
+.btn-group-fab.active .btn-sub:nth-child(2) {
+    bottom: 60px;
+}
+
+.btn-group-fab.active .btn-sub:nth-child(3) {
+    bottom: 110px;
+}
+
+.btn-group-fab.active .btn-sub:nth-child(4) {
+    bottom: 160px;
+}
+
+
+/* End Fab Btn */
+
+@media screen and (max-width:991px) {
+    .caption h1 {
+        font-size: 3rem;
+        font-weight: 550;
+        letter-spacing: 0.3rem;
+        text-shadow: 1rem 1rem 2rem #000 !important;
+        margin: auto;
+        border: 8px solid black;
+    }
+    .area h2 {
+        font-size: 2rem;
+    }
+    .area p {
+        width: 400px;
+        text-align: justify;
+        font-size: 1rem;
+    }
+    .area img {
+        margin: 1rem .5rem 1rem !important;
+        width: 300px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .caption h1 {
+        font-size: 2.2rem;
+        font-weight: 450;
+        letter-spacing: 0.1rem;
+        text-shadow: 1rem 1rem 2rem #000;
+        margin: auto;
+        border: 5px solid black;
+    }
+    .area {
+        padding: .5rem .5rem;
+    }
+    .area h2 {
+        font-size: 1.5rem;
+    }
+    .area p {
+        width: 100%;
+        text-align: justify;
+        font-size: 1rem;
+        padding: .2rem .5rem;
+        margin: .5rem 1rem;
+    }
+    .area img {
+        margin: 1rem auto!important;
+        width: 100%;
+    }
+    .btn-secondary {
+        font-size: 1.3rem;
+        padding: .2rem;
+        margin: .4rem auto;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .caption h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        text-shadow: 1rem 1rem 2rem #000;
+        margin: auto;
+        border: 3px solid black;
+    }
+    .area {
+        padding: .4rem .2rem;
+    }
+    .area h2 {
+        font-size: 1.5rem;
+    }
+    .area p {
+        width: 100%;
+        text-align: justify;
+        font-size: 1rem;
+        padding: .2rem;
+        margin: .2rem auto;
+    }
+    .area img {
+        margin: 1rem auto !important;
+        width: 100%;
+    }
+    .btn .btn-secondary {
+        font-size: .8rem;
+        padding: 0.2rem;
+        margin-left: auto;
+    }
+    .product {
+        border: 1px solid #cecece;
+        margin: .5rem auto;
+        box-shadow: 1px 1px 2px #1ebba3;
+    }
+    .img-product {
+        width: 200px;
+        margin: 1rem auto;
+    }
+    .img-product:hover {
+        width: 300px;
+        opacity: .5;
+    }
+    .product h3 {
+        padding: .5rem 0;
+        font-style: 1rem 'nazanin';
+    }
+    .product p {
+        font-size: 1rem;
+        text-align: justify;
+        padding: .1rem auto;
+    }
+    .product a i {
+        padding: .4rem auto;
+        font-size: 2.5rem;
+    }
+    .product a i:hover {
+        font-size: 2.5rem;
+    }
+}
